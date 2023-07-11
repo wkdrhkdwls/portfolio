@@ -544,6 +544,7 @@ main {
   width: 60px;
   height: 60px;
   display: grid;
+
   place-items: center;
   border-radius: 50%;
 }
@@ -551,6 +552,7 @@ main {
 .stats-card .card-icon img {
   width: 70%;
   filter: invert(1);
+  margin-left: 8px;
 }
 
 .stats-card .card-title {
