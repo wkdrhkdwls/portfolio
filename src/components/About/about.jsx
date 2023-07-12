@@ -6,28 +6,53 @@ const About = () => {
   return (
     <section class="about" id="about">
       <figure class="about-banner">
-        <StaticImage
-          src="../../../contents/images/about-banner.png"
-          alt="A man in a alice blue shirt with a thinking expression"
-          class="w-100"
-        />
+        <StaticImage src="../../../contents/images/banner.jpg" alt="banner" />
       </figure>
 
       <div class="about-content section-content">
         <p class="section-subtitle">About me</p>
 
         <h2 class="h3 section-title">
-          Need a Creative Product? I can Help You!
+          안녕하세요
+          <br /> 발전하는
+          <br /> 프론트엔드 개발자
+          <br /> 장광진입니다.
         </h2>
 
         <p class="section-text">
-          Hi! I’m Jack Reacher, and I’m a developer who has passion for building
-          clean web applications with intuitive functionalities. I enjoy the
-          process of turning ideas into reality using creative solutions. I’m
-          always curious about learning new skills, tools, and concepts. In
-          addition to working on various solo full stack projects, I have worked
-          with creative teams, which involves daily stand-ups and
-          communications, source control, and project management.
+          <div class="career">
+            <ul>
+              <h2>경력</h2>
+              <li>didi</li>
+              <li>dd</li>
+            </ul>
+          </div>
+          <div class="education">
+            <ul>
+              <h2>학력</h2>
+              <li>가톨릭대학교 미디어공학/컴퓨터공학</li>
+            </ul>
+          </div>
+          <div class="certificate">
+            <div>
+              <h2>자격증</h2>
+              <div>
+                <p>Opic Ix 2023.8</p>
+              </div>
+              <div>
+                <p>TOEIC xxx 2023.8</p>
+              </div>
+              <div>
+                <p> GTQ 2급</p>
+              </div>
+            </div>
+          </div>
+          <div class="other">
+            <ul>
+              <h2>기타</h2>
+              <li>가톨릭대학교 미디어기술콘텐츠학과 학생회장</li>
+            </ul>
+          </div>
         </p>
 
         <div class="btn-group">
