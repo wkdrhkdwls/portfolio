@@ -1,5 +1,3 @@
-import * as React from "react"
-
 function useHomeDetail() {
   const data = {
     title: "안녕하세요! 프론트엔드 개발자 장광진입니다!",
