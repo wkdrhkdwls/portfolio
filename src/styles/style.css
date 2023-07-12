@@ -627,7 +627,7 @@ main {
   top: 5px;
   left: 5px;
   bottom: 5px;
-  width: 93px;
+  width: 88px;
   background: var(--raw-seinna);
   border-radius: 100px;
   transition: var(--transition-1);
@@ -635,8 +635,8 @@ main {
 }
 
 .skills-toggle.active::before {
-  left: 98px;
-  width: 94px;
+  left: 92px;
+  width: 83px;
 }
 
 .toggle-btn {

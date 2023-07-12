@@ -27,7 +27,11 @@ const Home = () => {
 
       <ul class="hero-social-list">
         <li>
-          <a href="#" class="hero-social-link">
+          <a
+            href="https://www.instagram.com/jang_pang9/"
+            class="hero-social-link"
+            target="_blank"
+          >
             <FaInstagram />
 
             <div class="tooltip">Instagram</div>
@@ -35,7 +39,11 @@ const Home = () => {
         </li>
 
         <li>
-          <a href="#" class="hero-social-link">
+          <a
+            href="https://wkdrhkdwls.github.io/pangs-blog/"
+            class="hero-social-link"
+            target="_blank"
+          >
             <FaBlogger />
 
             <div class="tooltip">Blog</div>
@@ -43,7 +51,11 @@ const Home = () => {
         </li>
 
         <li>
-          <a href="#" class="hero-social-link">
+          <a
+            href="https://www.notion.so/bf200af2a1d94d0994c6a257ba88af12?pvs=4"
+            class="hero-social-link"
+            target="_blank"
+          >
             <RiNotionFill />
 
             <div class="tooltip">Notion</div>

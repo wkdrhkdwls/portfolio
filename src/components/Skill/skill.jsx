@@ -119,6 +119,54 @@ const Skill = () => {
               </div>
             </div>
           </li>
+          <li>
+            <div class="skill-card">
+              <div class="tooltip">Python</div>
+
+              <div class="card-icon">
+                <StaticImage
+                  src="../../../contents/images/python.png"
+                  alt="Python logo"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="tooltip">DJango</div>
+
+              <div class="card-icon">
+                <StaticImage
+                  src="../../../contents/images/django.png"
+                  alt="DJango logo"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="tooltip">MySQL</div>
+
+              <div class="card-icon">
+                <StaticImage
+                  src="../../../contents/images/mysql.png"
+                  alt="MySQL logo"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="tooltip">Oracle</div>
+
+              <div class="card-icon">
+                <StaticImage
+                  src="../../../contents/images/oracle.png"
+                  alt="Oracle logo"
+                />
+              </div>
+            </div>
+          </li>
         </ul>
 
         <ul class="tools-list">
@@ -234,6 +282,18 @@ const Skill = () => {
                 <StaticImage
                   src="../../../contents/images/adobe-xd.png"
                   alt="Adobe XD logo"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="tooltip">Figma</div>
+
+              <div class="card-icon">
+                <StaticImage
+                  src="../../../contents/images/figma.png"
+                  alt="Figma logo"
                 />
               </div>
             </div>

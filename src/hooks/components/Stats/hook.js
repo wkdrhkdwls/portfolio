@@ -8,7 +8,6 @@ function useStatsDetail() {
   const [users] = useState("wkdrhkdwls")
 
   const accessToken = process.env.GATSBY_ACCESS_TOKEN
-  console.log("Access Token:", process.env.GATSBY_ACCESS_TOKEN)
 
   useEffect(() => {
     const fetchRepos = async () => {
