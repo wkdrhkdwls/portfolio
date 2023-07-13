@@ -1,5 +1,5 @@
 import React from "react"
-import { FaInstagram, FaBlogger } from "react-icons/fa"
+import { FaInstagram, FaBlogger, FaGithub } from "react-icons/fa"
 import { RiNotionFill } from "react-icons/ri"
 import "../../styles/style.css"
 import { StaticImage } from "gatsby-plugin-image"
@@ -26,6 +26,18 @@ const Home = () => {
       </div>
 
       <ul class="hero-social-list">
+        <li>
+          <a
+            href="https://github.com/wkdrhkdwls"
+            class="hero-social-link"
+            target="_blank"
+          >
+            <FaGithub />
+
+            <div class="tooltip">Github</div>
+          </a>
+        </li>
+
         <li>
           <a
             href="https://www.instagram.com/jang_pang9/"
