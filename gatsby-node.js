@@ -16,3 +16,26 @@ exports.createPages = async ({ actions }) => {
   //   defer: true,
   // })
 }
+
+const { createFilePath } = require("gatsby-source-filesystem")
+const path = require("path")
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === "File" && node.sourceInstanceName === "images") {
+    const relativeFilePath = createFilePath({ node, getNode })
+    const parentFolderName = getNode(node.parent).relativeDirectory
+    const newPath = path.join(
+      "contents/images",
+      parentFolderName,
+      relativeFilePath
+    )
+
+    createNodeField({
+      node,
+      name: "publicURL",
+      value: newPath,
+    })
+  }
+}
