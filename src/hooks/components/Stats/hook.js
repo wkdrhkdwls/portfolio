@@ -23,7 +23,6 @@ function useStatsDetail() {
           setItems(repos)
           console.log(repos)
 
-          // Calculate total commit count
           let totalCount = 0
           for (const repo of repos) {
             const commitsRes = await fetch(

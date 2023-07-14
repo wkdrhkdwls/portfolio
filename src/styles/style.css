@@ -1453,16 +1453,30 @@ textarea.input-field {
 }
 .gganbu-content {
   max-width: 450px;
-  text-align: center; /* Added */
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .gganbu-subtitle {
   font-size: 40px;
-  display: flex;
-  justify-content: left;
-  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
 .gganbu-text {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.github-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.github-link:hover {
+  background-color: #555;
 }
