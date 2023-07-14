@@ -1,6 +1,5 @@
 import React from "react"
 import "../../styles/style.css"
-import { StaticImage } from "gatsby-plugin-image"
 import useSkillDetail from "../../hooks/components/Skill/hook"
 
 const Skill = () => {
@@ -16,11 +15,11 @@ const Skill = () => {
 
         <div class="skills-toggle" data-toggle-box>
           <button class="toggle-btn active" data-toggle-btn>
-            Skills
+            {titleData.skillButton}
           </button>
 
           <button class="toggle-btn" data-toggle-btn>
-            Tools
+            {titleData.toolButton}
           </button>
         </div>
       </div>

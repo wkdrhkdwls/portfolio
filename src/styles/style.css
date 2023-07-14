@@ -1424,3 +1424,45 @@ textarea.input-field {
     max-width: 450px;
   }
 }
+/* ======================================= */
+/**
+  * 깐부GG
+  */
+
+.gganbu {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 205px;
+  margin-bottom: var(--section-padding);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+.gganbu-title {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gganbu-banner {
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.gganbu-content {
+  max-width: 450px;
+  text-align: center; /* Added */
+  margin-bottom: 30px;
+}
+
+.gganbu-subtitle {
+  font-size: 40px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+.gganbu-text {
+  margin-bottom: 50px;
+}

@@ -32,8 +32,10 @@ function useSkillDetail() {
   const titleData = {
     title: "My skills",
     head: "Available Skills & Tools",
+    skillButton: "Skills",
+    toolButton: "Tools",
     description:
-      "저는 사용자가 다음과 같은 기술로 더 적은 노력과 시간으로 작업을 수행할 수 있도록 지원하는 간단하고 직관적이며 대응력이 뛰어난 사용자 인터페이스를 개발합니다.",
+      "저는 사용자가 다음과 같은 기술로 더 적은 노력과 시간으로 작업을 수행할 수 있도록 지원하는 간단하고 직관적이며 대응력이 뛰어난 사용자 인터페이스를 개발하려고합니다.",
   }
 
   return { skillURL, toolURL, titleData }

@@ -12,29 +12,25 @@ const Projects = () => {
 
             <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
 
-            <p class="section-text">
-              We develop the best quality website that serves for the long-term.
-              Well-documented, clean, easy and elegant interface helps any
-              non-technical clients.
-            </p>
+            <p class="section-text">프로젝트 목록</p>
           </div>
         </li>
 
         <li>
-          <a href="#" class="project-card">
+          <a href="/projects/gganbu" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/project-1.png"
+                src="../../../contents/images/gganbu/gganbuTitle.jpg"
                 class="w-100"
                 alt="A macintosh on a yellow background."
               />
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+              <h3 class="h4 card-title">깐부GG</h3>
 
               <time class="publish-date" datetime="2022-04">
-                April 2022
+                March 2023
               </time>
             </div>
           </a>
