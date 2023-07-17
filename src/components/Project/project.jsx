@@ -78,23 +78,23 @@ const Projects = () => {
         </li>
 
         <li>
-          <a href="#" class="project-card">
+          <Link href="/projects/festival" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/project-4.png"
+                src="../../../contents/images/festival/festival.png"
                 class="w-100"
                 alt="Blue digital watch on a dark liver background."
               />
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+              <h3 class="h4 card-title">2023 가톨릭대학교 축제 홍보페이지</h3>
 
               <time class="publish-date" datetime="2022-04">
-                April 2022
+                May 2023
               </time>
             </div>
-          </a>
+          </Link>
         </li>
 
         <li>

@@ -33,8 +33,10 @@ const CustomScript = () => {
 
     const navToggleBtn = document.querySelector("[data-nav-toggle-btn]")
     const navbar = document.querySelector("[data-navbar]")
+    let isActive = false
 
     navToggleBtn.addEventListener("click", function () {
+      isActive = !isActive
       elemToggleFunc(navToggleBtn)
       elemToggleFunc(navbar)
       elemToggleFunc(document.body)
