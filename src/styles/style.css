@@ -1426,10 +1426,10 @@ textarea.input-field {
 }
 /* ======================================= */
 /**
-  * 깐부GG
+  * 프로젝트 Detail
   */
 
-.gganbu {
+.project-detail {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1440,33 +1440,38 @@ textarea.input-field {
   color: var(--color-primary);
   line-height: 1.2;
 }
-.gganbu-title {
+.project-detail-title {
   font-size: 70px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.gganbu-banner {
+.project-detail-banner {
   max-width: 900px;
   width: 100%;
   margin-bottom: 30px;
 }
-.gganbu-content {
+.project-detail-content {
   max-width: 450px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.gganbu-subtitle {
+.project-detail-subtitle {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.gganbu-text {
+.project-detail-text {
   margin-bottom: 40px;
   line-height: 1.6;
 }
+
+/* ======================================= */
+/**
+  * Link
+  */
 
 .github-link {
   display: inline-block;
@@ -1479,4 +1484,18 @@ textarea.input-field {
 
 .github-link:hover {
   background-color: #555;
+}
+
+/* ======================================= */
+/**
+  * TMTP Detail
+  */
+
+.tmtp-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 30px;
 }

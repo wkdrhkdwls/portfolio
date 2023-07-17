@@ -1,6 +1,7 @@
 import React from "react"
 import "../../styles/style.css"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
         </li>
 
         <li>
-          <a href="/projects/gganbu" class="project-card">
+          <Link href="/projects/gganbu" class="project-card">
             <figure class="card-banner">
               <StaticImage
                 src="../../../contents/images/gganbu/gganbuTitle.jpg"
@@ -33,11 +34,11 @@ const Projects = () => {
                 March 2023
               </time>
             </div>
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a href="/projects/devrentPage" class="project-card">
+          <Link href="/projects/devrentPage" class="project-card">
             <figure class="card-banner">
               <StaticImage
                 src="../../../contents/images/devrent/devrent.png"
@@ -53,27 +54,27 @@ const Projects = () => {
                 March 2023
               </time>
             </div>
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a href="#" class="project-card">
+          <Link href="/projects/tmtp" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/project-3.png"
+                src="../../../contents/images/tmtp/tmtp.png"
                 class="w-100"
                 alt="A Cassette tape on a mellow apricot background."
               />
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+              <h3 class="h4 card-title">TMTP</h3>
 
               <time class="publish-date" datetime="2022-04">
-                April 2022
+                June 2023
               </time>
             </div>
-          </a>
+          </Link>
         </li>
 
         <li>

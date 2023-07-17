@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import GganbuDetail from "../../hooks/pages/projects/gganbu/hook"
+import TMTPDetail from "../../hooks/pages/projects/tmtp/hook"
 
-const GganbuGG = () => {
-  const { data, titleData } = GganbuDetail()
+const TMTP = () => {
+  const { titleData } = TMTPDetail()
 
   return (
     <>
@@ -17,10 +17,16 @@ const GganbuGG = () => {
             <section class="project-detail" id="home">
               <div>
                 <figure class="project-detail-banner">
-                  <StaticImage
-                    src="../../../contents/images/gganbu/gganbuTitle.jpg"
-                    alt="gganbu"
-                  />
+                  <div class="tmtp-img">
+                    <StaticImage
+                      src="../../../contents/images/tmtp/tmtp.png"
+                      alt="tmtp"
+                    />
+                    <StaticImage
+                      src="../../../contents/images/tmtp/tmtp_mobile.png"
+                      alt="tmtp_mobile"
+                    />
+                  </div>
                 </figure>
               </div>
               <div class="project-detail-content">
@@ -49,4 +55,4 @@ const GganbuGG = () => {
   )
 }
 
-export default GganbuGG
+export default TMTP

@@ -14,24 +14,26 @@ const DevRentWebPage = () => {
       <Layout>
         <main>
           <article class="container">
-            <section class="gganbu" id="home">
+            <section class="project-detail" id="home">
               <div>
-                <figure class="gganbu-banner">
+                <figure class="project-detail-banner">
                   <StaticImage
                     src="../../../contents/images/devrent/devrent.png"
                     alt="gganbu"
                   />
                 </figure>
               </div>
-              <div class="gganbu-content">
-                <h2 class="h2 gganbu-title">{titleData.title}</h2>
+              <div class="project-detail-content">
+                <h2 class="h2 project-detail-title">{titleData.title}</h2>
               </div>
               <div>
                 <div>
                   {titleData.sections.map((section, index) => (
                     <div key={index}>
-                      <h2 class="gganbu-subtitle">{section.subtitle}</h2>
-                      <p class="gganbu-text">{section.description}</p>
+                      <h2 class="project-detail-subtitle">
+                        {section.subtitle}
+                      </h2>
+                      <p class="project-detail-text">{section.description}</p>
                     </div>
                   ))}
                 </div>
