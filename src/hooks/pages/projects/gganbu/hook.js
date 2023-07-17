@@ -18,8 +18,6 @@ function GganbuDetail() {
     }
   `)
 
-  const gganbuURL = data.gganbuURL.edges.map(({ node }) => node)
-
   const titleData = {
     title: "깐부 GG",
     sections: [
@@ -53,7 +51,7 @@ function GganbuDetail() {
     ],
   }
 
-  return { gganbuURL, titleData }
+  return { data, titleData }
 }
 
 export default GganbuDetail

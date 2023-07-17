@@ -10,7 +10,7 @@ const Projects = () => {
           <div class="project-content section-content">
             <p class="section-subtitle">My Works</p>
 
-            <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+            <h2 class="h3 section-title">Team Projects & Personal Projects</h2>
 
             <p class="section-text">프로젝트 목록</p>
           </div>
@@ -37,20 +37,20 @@ const Projects = () => {
         </li>
 
         <li>
-          <a href="#" class="project-card">
+          <a href="/projects/devrentPage" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/project-2.png"
+                src="../../../contents/images/devrent/devrent.png"
                 class="w-100"
                 alt="On a Blue background, a Wacom and a mouse."
               />
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+              <h3 class="h4 card-title">DevRent WebPage</h3>
 
               <time class="publish-date" datetime="2022-04">
-                April 2022
+                March 2023
               </time>
             </div>
           </a>

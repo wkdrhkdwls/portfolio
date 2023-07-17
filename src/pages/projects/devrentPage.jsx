@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import GganbuDetail from "../../hooks/pages/projects/gganbu/hook"
+import DevRentDetail from "../../hooks/pages/projects/devrent/hook"
 
-const GganbuGG = () => {
-  const { data, titleData } = GganbuDetail()
+const DevRentWebPage = () => {
+  const { titleData } = DevRentDetail()
 
   return (
     <>
@@ -18,7 +18,7 @@ const GganbuGG = () => {
               <div>
                 <figure class="gganbu-banner">
                   <StaticImage
-                    src="../../../contents/images/gganbu/gganbuTitle.jpg"
+                    src="../../../contents/images/devrent/devrent.png"
                     alt="gganbu"
                   />
                 </figure>
@@ -47,4 +47,4 @@ const GganbuGG = () => {
   )
 }
 
-export default GganbuGG
+export default DevRentWebPage
