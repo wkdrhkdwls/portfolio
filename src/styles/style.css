@@ -1447,6 +1447,7 @@ textarea.input-field {
 .github-link {
   display: inline-block;
   padding: 8px 16px;
+  margin-right: 10px;
   background-color: #333;
   color: #fff;
   text-decoration: none;
