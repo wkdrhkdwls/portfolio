@@ -4,6 +4,10 @@ import useSkillDetail from "../../hooks/components/Skill/hook"
 
 const Skill = () => {
   const { skillURL, toolURL, titleData } = useSkillDetail()
+
+  const CapitalizeFirstLetter = str => {
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  }
   return (
     <section class="skills" id="skills">
       <div class="skills-content section-content">
@@ -29,7 +33,9 @@ const Skill = () => {
           {skillURL.map(node => (
             <li key={node.publicURL}>
               <div className="skill-card">
-                <div className="tooltip">{node.name}</div>
+                <div className="tooltip">
+                  {CapitalizeFirstLetter(node.name)}
+                </div>
                 <div className="card-icon">
                   <img src={node.publicURL} alt={node.name} />
                 </div>
@@ -42,7 +48,9 @@ const Skill = () => {
           {toolURL.map(node => (
             <li key={node.publicURL}>
               <div className="skill-card">
-                <div className="tooltip">{node.name}</div>
+                <div className="tooltip">
+                  {CapitalizeFirstLetter(node.name)}
+                </div>
                 <div className="card-icon">
                   <img src={node.publicURL} alt={node.name} />
                 </div>
