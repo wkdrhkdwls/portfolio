@@ -97,7 +97,7 @@ const Projects = () => {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <a href="#" class="project-card">
             <figure class="card-banner">
               <StaticImage
@@ -155,11 +155,7 @@ const Projects = () => {
               </time>
             </div>
           </a>
-        </li>
-
-        <li>
-          <button class="load-more">Load more work</button>
-        </li>
+        </li> */}
       </ul>
     </section>
   )

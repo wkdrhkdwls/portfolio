@@ -3,6 +3,8 @@ import "../../styles/style.css"
 import React from "react"
 
 const Footer = ({ siteTitle, author }) => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer class="footer">
       <div class="container">
@@ -11,7 +13,7 @@ const Footer = ({ siteTitle, author }) => {
         </p>
 
         <p class="copyright">
-          &copy; 2022 <Link href="#">{author}</Link>. All rights reserved
+          © {currentYear} <Link href="#">{author}</Link>. All rights reserved
         </p>
       </div>
     </footer>
