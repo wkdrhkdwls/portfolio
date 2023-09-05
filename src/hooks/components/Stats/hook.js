@@ -47,7 +47,7 @@ function useStatsDetail() {
 
   const data = [
     {
-      title: `+6`,
+      title: `+9`,
       description: "Organization",
       icon: <SlOrganization color="black" size={32} />,
     },
