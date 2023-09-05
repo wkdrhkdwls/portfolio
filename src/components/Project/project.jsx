@@ -31,7 +31,7 @@ const Projects = () => {
               <h3 class="h4 card-title">깐부GG</h3>
 
               <time class="publish-date" datetime="2022-04">
-                March 2023
+                Jan 2023
               </time>
             </div>
           </Link>

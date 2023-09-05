@@ -24,7 +24,7 @@ function useAboutDetail() {
     career: {
       title: "약력",
       about: {
-        "DevRent 2022.08 ~ 2022.02": [
+        "DevRent 2022.08 ~ 2023.02": [
           "롤토체스 더블업 모드 전용 통계 사이트 깐부GG 제작",
           "DevRent 웹 홈페이지 제작",
         ],
