@@ -43,7 +43,7 @@ function useAboutDetail() {
       title: "자격증",
       about: {
         // Opic: "Ix 2023.8",
-        ToEIC: "xxx 2023.8",
+        운전면허: "1종 보통",
         GTQ: "2급",
       },
     },
