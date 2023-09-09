@@ -11,9 +11,9 @@ const Projects = () => {
           <div class="project-content section-content">
             <p class="section-subtitle">My Works</p>
 
-            <h2 class="h3 section-title">Team Projects & Personal Projects</h2>
+            <h2 class="h3 section-title">Team Projects</h2>
 
-            <p class="section-text">프로젝트 목록</p>
+            <p class="section-text">팀 프로젝트 목록</p>
           </div>
         </li>
 
