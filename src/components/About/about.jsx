@@ -22,7 +22,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <figure className="about-banner">
-        <img src={bannerUrl.allFile.edges[0].node.publicURL} alt="banner" />
+        <img src={bannerUrl.allFile.edges[1].node.publicURL} alt="banner" />
       </figure>
 
       <div className="about-content section-content">
