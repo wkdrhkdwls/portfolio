@@ -97,6 +97,26 @@ const Projects = () => {
           </Link>
         </li>
 
+        <li>
+          <Link href="/projects/crush" class="project-card">
+            <figure class="card-banner">
+              <StaticImage
+                src="../../../contents/images/crush/Crush.png"
+                class="w-100"
+                alt="Blue digital watch on a dark liver background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Crush(개발 진행중)</h3>
+
+              <time class="publish-date" datetime="2022-04">
+                Sep 2023
+              </time>
+            </div>
+          </Link>
+        </li>
+
         {/* <li>
           <a href="#" class="project-card">
             <figure class="card-banner">

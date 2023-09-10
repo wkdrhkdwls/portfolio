@@ -1488,3 +1488,9 @@ textarea.input-field {
   text-align: center;
   margin-bottom: 30px;
 }
+
+.crush-img {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
