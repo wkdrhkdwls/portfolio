@@ -108,7 +108,7 @@ const Projects = () => {
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Crush(개발 진행중)</h3>
+              <h3 class="h4 card-title">My List(개발 진행중)</h3>
 
               <time class="publish-date" datetime="2022-04">
                 Sep 2023
