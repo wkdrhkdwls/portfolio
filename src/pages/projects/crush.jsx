@@ -17,7 +17,7 @@ const TMTP = () => {
             <section class="project-detail" id="home">
               <div>
                 <figure class="project-detail-banner">
-                  <div class="crush-img">
+                  <div class="myList-img">
                     <StaticImage
                       src="../../../contents/images/crush/Crush.png"
                       alt="Crush"

@@ -102,7 +102,7 @@ const Projects = () => {
             <figure class="card-banner">
               <StaticImage
                 src="../../../contents/images/crush/Crush.png"
-                class="w-100"
+                class="myListBanner"
                 alt="Blue digital watch on a dark liver background."
               />
             </figure>
@@ -117,65 +117,25 @@ const Projects = () => {
           </Link>
         </li>
 
-        {/* <li>
-          <a href="#" class="project-card">
-            <figure class="card-banner">
-              <StaticImage
-                src="../../../contents/images/project-5.png"
-                class="w-100"
-                alt="On a dark liver background, Airport luggage car carrying a luggage."
-              />
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
-
-              <time class="publish-date" datetime="2022-04">
-                April 2022
-              </time>
-            </div>
-          </a>
-        </li>
-
         <li>
-          <a href="#" class="project-card">
+          <Link href="/projects/qrunch" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/project-6.png"
-                class="w-100"
-                alt="On a yellow background, a digital watch and a glass."
+                src="../../../contents/images/qrunch/Qrunch.png"
+                class="w-50"
+                alt="Blue digital watch on a dark liver background."
               />
             </figure>
 
             <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+              <h3 class="h4 card-title">Qrunch(개발 진행중)</h3>
 
               <time class="publish-date" datetime="2022-04">
-                April 2022
+                Sep 2023
               </time>
             </div>
-          </a>
+          </Link>
         </li>
-
-        <li>
-          <a href="#" class="project-card">
-            <figure class="card-banner">
-              <StaticImage
-                src="../../../contents/images/project-7.png"
-                class="w-100"
-                alt="A fujifilm instant camera on a dark electric blue background."
-              />
-            </figure>
-
-            <div class="card-content">
-              <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
-
-              <time class="publish-date" datetime="2022-04">
-                April 2022
-              </time>
-            </div>
-          </a>
-        </li> */}
       </ul>
     </section>
   )

@@ -1497,8 +1497,12 @@ textarea.input-field {
   margin-bottom: 30px;
 }
 
-.crush-img {
+.myList-img {
   display: flex;
   justify-items: center;
   align-items: center;
+}
+
+.myListBanner {
+  height: 350px;
 }
