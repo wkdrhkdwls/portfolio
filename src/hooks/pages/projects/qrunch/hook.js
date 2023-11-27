@@ -7,7 +7,7 @@ function QrunchDetail() {
     sections: [
       {
         subtitle: "1. 수행 동기 및 배경",
-        description: "Qrunch는 ",
+        description: "Qrunch는 dd ",
       },
       {
         subtitle: "2. 기대효과 및 활용계획",
