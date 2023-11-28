@@ -32,7 +32,10 @@ function useAboutDetail() {
           "가톨릭대학교 축제 홍보 페이지 제작",
           "멋쟁이사자처럼 해커톤 참여",
         ],
-        "GDSC 2023.09 ~ 현재": ["프로젝트 CRUSH"],
+        "GDSC 2023.09 ~ 현재": [
+          "창업 프로젝트 MyList",
+          "맛집 추천 사이트 개발",
+        ],
       },
     },
     education: {
@@ -42,7 +45,8 @@ function useAboutDetail() {
     certificate: {
       title: "자격증",
       about: {
-        // Opic: "Ix 2023.8",
+        정보처리기사: "정보처리기사 취득",
+        Opic: "IM2 2023.10",
         운전면허: "1종 보통",
         GTQ: "2급",
       },
