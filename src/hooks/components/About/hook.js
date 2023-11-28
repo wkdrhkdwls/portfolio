@@ -45,7 +45,7 @@ function useAboutDetail() {
     certificate: {
       title: "자격증",
       about: {
-        정보처리기사: "취득",
+        정보처리기사: "취득 ",
         Opic: "IM2 2023.10",
         운전면허: "1종 보통",
         GTQ: "2급",
