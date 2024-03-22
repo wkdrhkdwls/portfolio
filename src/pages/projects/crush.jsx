@@ -35,7 +35,12 @@ const TMTP = () => {
                       <h2 class="project-detail-subtitle">
                         {section.subtitle}
                       </h2>
-                      <p class="project-detail-text">{section.description}</p>
+                      <p
+                        class="project-detail-text"
+                        dangerouslySetInnerHTML={{
+                          __html: section.description,
+                        }}
+                      ></p>
                     </div>
                   ))}
                 </div>

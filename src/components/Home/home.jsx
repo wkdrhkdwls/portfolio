@@ -52,7 +52,7 @@ const Home = () => {
 
         <li>
           <a
-            href="https://wkdrhkdwls.github.io/pangs-blog/"
+            href="https://velog.io/@pangs_boy/posts"
             class="hero-social-link"
             target="_blank"
           >
