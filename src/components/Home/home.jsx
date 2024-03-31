@@ -1,5 +1,5 @@
 import React from "react"
-import { FaInstagram, FaBlogger, FaGithub } from "react-icons/fa"
+import { FaInstagram, FaBlogger, FaGithub, FaLinkedin } from "react-icons/fa"
 import { RiNotionFill } from "react-icons/ri"
 import "../../styles/style.css"
 import { StaticImage } from "gatsby-plugin-image"
@@ -71,6 +71,17 @@ const Home = () => {
             <RiNotionFill />
 
             <div class="tooltip">Notion</div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jangpang9/"
+            class="hero-social-link"
+            target="_blank"
+          >
+            <FaLinkedin />
+
+            <div class="tooltip">LinkedIn</div>
           </a>
         </li>
       </ul>

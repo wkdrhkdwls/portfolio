@@ -280,17 +280,64 @@ body.active {
   text-align: start;
 }
 
+.career h3 {
+  font-size: 16px;
+  color: var(--raw-seinna);
+}
+
 .career li {
   list-style: inside;
 }
+
 .education {
   display: flex;
   flex-direction: column;
   text-align: start;
+  padding: 0;
 }
+
+.education > ul {
+  padding: 0;
+  margin: 0;
+}
+
 .education li {
-  list-style: inside;
+  list-style-type: none; /* 기본 목록 스타일 제거 */
+  margin-bottom: 0.5rem; /* 각 목록 항목 아래 마진 추가 */
 }
+
+.education li li {
+  /* 중첩된 목록 항목 스타일링 */
+  margin-top: 0.25rem; /* 중첩된 목록 항목 상단 마진 */
+  margin-bottom: 0.25rem; /* 중첩된 목록 항목 하단 마진 */
+  padding-left: 1.5rem; /* 중첩된 목록 항목 왼쪽 패딩 */
+  position: relative; /* 가상 요소를 위한 위치 설정 */
+}
+
+.education li li::before {
+  /* 커스텀 목록 마커 */
+  content: "•"; /* 마커 모양 */
+  color: #6c757d; /* 마커 색상 */
+  position: absolute; /* 절대 위치 */
+  left: 0; /* 왼쪽에서 위치 */
+}
+
+.education > ul > li:first-child {
+  font-weight: bold; /* 고등학교 항목에 대한 스타일 */
+}
+
+.education strong {
+  /* 학사 섹션 타이틀 스타일 */
+  display: block; /* 새 줄에서 시작 */
+  margin-top: 1rem; /* 상단 마진 추가 */
+  margin-bottom: 0.5rem; /* 하단 마진 추가 */
+}
+
+.education strong + ul {
+  /* 학사 섹션의 ul에 대한 스타일 */
+  padding-left: 0; /* 왼쪽 패딩 제거 */
+}
+
 .certificate {
   display: flex;
   flex-direction: column;
@@ -298,6 +345,18 @@ body.active {
 }
 .certificate li {
   list-style: inside;
+}
+.competition {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.competition li {
+  list-style: inside;
+}
+.competition h3 {
+  font-size: 16px;
+  color: var(--raw-seinna);
 }
 .other {
   display: flex;

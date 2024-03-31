@@ -1,6 +1,5 @@
 import React from "react"
 import "../../styles/style.css"
-import { StaticImage } from "gatsby-plugin-image"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import useAboutDetail from "../../hooks/components/About/hook"
@@ -60,17 +59,59 @@ const About = () => {
               <div className="education">
                 <h2>{data.education.title}</h2>
                 <ul>
-                  <li>{data.education.about}</li>
+                  <li>
+                    <strong>고등학교</strong>
+                    <ul>
+                      <li>학교명: {data.education.about.고등학교.학교명}</li>
+                      <li>기간: {data.education.about.고등학교.기간}</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>대학교</strong>
+                    <ul>
+                      <li>학교명: {data.education.about.대학교.학교명}</li>
+                      <li>기간: {data.education.about.대학교.기간}</li>
+                      <li>전체학점: {data.education.about.대학교.전체학점}</li>
+                      <li>
+                        전공: {data.education.about.대학교.전공.전공명} (
+                        {data.education.about.대학교.전공.학점})
+                      </li>
+                      <li>
+                        복수전공: {data.education.about.대학교.복수전공.전공명}{" "}
+                        ({data.education.about.대학교.복수전공.학점})
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
+            </div>
+            <div>
+              <div className="competition">
+                <h2>{data.competition.title}</h2>
+                <ul>
+                  {Object.entries(data.competition.about).map(
+                    ([title, details], index) => (
+                      <div key={index}>
+                        <h3>
+                          {index + 1}. {title}
+                        </h3>
+                        <span>수상일시: {details.수상일시}</span>
+                        <span>수상기관: {details.수상기관}</span>
+                      </div>
+                    )
+                  )}
+                </ul>
+              </div>
+            </div>
+            <div>
               <div className="certificate">
                 <h2>{data.certificate.title}</h2>
                 <ul>
                   {Object.entries(data.certificate.about).map(
                     ([title, date], index) => (
-                      <li key={index}>
-                        {title} {date}
-                      </li>
+                      <div key={index}>
+                        {index + 1}. {title} {date}
+                      </div>
                     )
                   )}
                 </ul>
@@ -79,7 +120,9 @@ const About = () => {
                 <h2>{data.other.title}</h2>
                 <ul>
                   {data.other.about.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <div key={index}>
+                      {index + 1}. {item}
+                    </div>
                   ))}
                 </ul>
               </div>
