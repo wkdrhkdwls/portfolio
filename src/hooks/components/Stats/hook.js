@@ -26,10 +26,25 @@ function useStatsDetail() {
           let totalCount = 0
           for (const repo of repos) {
             const commitsRes = await fetch(
-              repo.commits_url.replace("{/sha}", "")
+              repo.commits_url.replace("{/sha}", ""),
+              {
+                headers: {
+                  Authorization: `Bearer ${accessToken}`, // 여기에 헤더 추가
+                },
+              }
             )
-            const commits = await commitsRes.json()
-            totalCount += commits.length
+            if (commitsRes.ok) {
+              // 응답이 성공적인지 확인
+              const commits = await commitsRes.json()
+              if (Array.isArray(commits)) {
+                // commits가 배열인지 확인
+                totalCount += commits.length
+              }
+            } else {
+              console.error(
+                `Failed to fetch commits for repo: ${repo.name}. Status: ${commitsRes.status}`
+              )
+            }
           }
           setTotalCommitCount(totalCount)
         } else {
@@ -44,7 +59,7 @@ function useStatsDetail() {
   }, [users, accessToken])
 
   const [totalCommitCount, setTotalCommitCount] = useState(0)
-
+  console.log(totalCommitCount)
   const data = [
     {
       title: `+12`,
