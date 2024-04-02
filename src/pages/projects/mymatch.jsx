@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import MyListDetail from "../../hooks/pages/projects/mylist/hook"
+import MyMatchDetail from "../../hooks/pages/projects/mymatch/hook"
 
 const MyMatch = () => {
-  const { titleData } = MyListDetail()
+  const { titleData } = MyMatchDetail()
 
   return (
     <>
@@ -17,10 +17,10 @@ const MyMatch = () => {
             <section class="project-detail" id="home">
               <div>
                 <figure class="project-detail-banner">
-                  <div class="myList-img">
+                  <div class="mymatch-img">
                     <StaticImage
-                      src="../../../contents/images/mylist/mylist.png"
-                      alt="Mylist"
+                      src="../../../contents/images/mymatch/mymatch.png"
+                      alt="mymatch"
                     />
                   </div>
                 </figure>
@@ -35,12 +35,7 @@ const MyMatch = () => {
                       <h2 class="project-detail-subtitle">
                         {section.subtitle}
                       </h2>
-                      <p
-                        class="project-detail-text"
-                        dangerouslySetInnerHTML={{
-                          __html: section.description,
-                        }}
-                      ></p>
+                      <p class="project-detail-text">{section.description}</p>
                     </div>
                   ))}
                 </div>

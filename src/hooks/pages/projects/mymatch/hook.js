@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
-function MyListDetail() {
+function MyMatchDetail() {
   const titleData = {
-    title: "MyList",
+    title: "MyMatch",
     sections: [
       {
         subtitle: "1. 수행 동기 및 배경",
@@ -40,4 +39,4 @@ function MyListDetail() {
   return { titleData }
 }
 
-export default MyListDetail
+export default MyMatchDetail

@@ -1485,6 +1485,9 @@ textarea.input-field {
 }
 
 .project-detail-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 900px;
   width: 100%;
   margin-bottom: 30px;
@@ -1539,29 +1542,19 @@ textarea.input-field {
   margin-bottom: 30px;
 }
 
-/* ======================================= */
-/**
-  * Festival Detail
-  */
-
-.festival-banner {
-  max-width: 600px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.festival-title {
-  font-size: 0px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .myList-img {
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  width: 120%;
+  border-radius: 10px;
 }
 
 .myListBanner {
   height: 350px;
+}
+
+.mymatch-img {
+  width: 70%;
+}
+
+.metlife-img {
+  width: 70%;
 }
