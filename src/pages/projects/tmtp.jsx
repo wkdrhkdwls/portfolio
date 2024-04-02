@@ -19,12 +19,8 @@ const TMTP = () => {
                 <figure class="project-detail-banner">
                   <div class="tmtp-img">
                     <StaticImage
-                      src="../../../contents/images/tmtp/tmtp.png"
+                      src="../../../contents/images/tmtp/tmtp.jpg"
                       alt="tmtp"
-                    />
-                    <StaticImage
-                      src="../../../contents/images/tmtp/tmtp_mobile.png"
-                      alt="tmtp_mobile"
                     />
                   </div>
                 </figure>

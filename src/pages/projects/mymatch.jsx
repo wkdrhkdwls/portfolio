@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import CrushDetail from "../../hooks/pages/projects/crush/hook"
+import MyListDetail from "../../hooks/pages/projects/mylist/hook"
 
-const TMTP = () => {
-  const { titleData } = CrushDetail()
+const MyMatch = () => {
+  const { titleData } = MyListDetail()
 
   return (
     <>
@@ -19,8 +19,8 @@ const TMTP = () => {
                 <figure class="project-detail-banner">
                   <div class="myList-img">
                     <StaticImage
-                      src="../../../contents/images/crush/Crush.png"
-                      alt="Crush"
+                      src="../../../contents/images/mylist/mylist.png"
+                      alt="Mylist"
                     />
                   </div>
                 </figure>
@@ -56,4 +56,4 @@ const TMTP = () => {
   )
 }
 
-export default TMTP
+export default MyMatch

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-function CrushDetail() {
+function MyListDetail() {
   const titleData = {
     title: "MyList",
     sections: [
@@ -26,11 +26,11 @@ function CrushDetail() {
         description: (
           <div>
             <Link
-              to="https://github.com/wkdrhkdwls/Crush_Front"
+              to="https://mylist.im/"
               target="_blank"
               className="github-link"
             >
-              Github링크
+              배포
             </Link>
           </div>
         ),
@@ -46,4 +46,4 @@ function CrushDetail() {
   return { titleData }
 }
 
-export default CrushDetail
+export default MyListDetail

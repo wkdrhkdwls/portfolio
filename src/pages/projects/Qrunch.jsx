@@ -6,7 +6,7 @@ import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
 import QrunchDetail from "../../hooks/pages/projects/qrunch/hook"
 
-const TMTP = () => {
+const Qrunch = () => {
   const { titleData } = QrunchDetail()
 
   return (
@@ -20,7 +20,7 @@ const TMTP = () => {
                   <div class="Qrunch-img">
                     <StaticImage
                       src="../../../contents/images/qrunch/Qrunch.png"
-                      alt="Crush"
+                      alt=""
                     />
                   </div>
                 </figure>
@@ -51,4 +51,4 @@ const TMTP = () => {
   )
 }
 
-export default TMTP
+export default Qrunch

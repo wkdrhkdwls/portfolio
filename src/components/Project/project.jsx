@@ -81,7 +81,7 @@ const Projects = () => {
           <Link href="/projects/mylist" class="project-card">
             <figure class="card-banner">
               <StaticImage
-                src="../../../contents/images/crush/Crush.png"
+                src="../../../contents/images/mylist/mylist.png"
                 class="myListBanner"
                 alt="Blue digital watch on a dark liver background."
               />

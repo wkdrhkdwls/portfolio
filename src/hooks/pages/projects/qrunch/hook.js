@@ -24,7 +24,7 @@ function QrunchDetail() {
         description: (
           <div>
             <Link
-              to="https://github.com/wkdrhkdwls/Crush_Front"
+              to="https://github.com/wkdrhkdwls/Qrunch-UM_Front"
               target="_blank"
               className="github-link"
             >
