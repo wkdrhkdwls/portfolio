@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import DevRentDetail from "../../hooks/pages/projects/devrent/hook"
+import CrushDetail from "../../hooks/pages/projects/crush/hook"
 
-const DevRentWebPage = () => {
-  const { titleData } = DevRentDetail()
+const TMTP = () => {
+  const { titleData } = CrushDetail()
 
   return (
     <>
@@ -17,10 +17,12 @@ const DevRentWebPage = () => {
             <section class="project-detail" id="home">
               <div>
                 <figure class="project-detail-banner">
-                  <StaticImage
-                    src="../../../contents/images/devrent/devrent.png"
-                    alt="gganbu"
-                  />
+                  <div class="myList-img">
+                    <StaticImage
+                      src="../../../contents/images/crush/Crush.png"
+                      alt="Crush"
+                    />
+                  </div>
                 </figure>
               </div>
               <div class="project-detail-content">
@@ -33,7 +35,12 @@ const DevRentWebPage = () => {
                       <h2 class="project-detail-subtitle">
                         {section.subtitle}
                       </h2>
-                      <p class="project-detail-text">{section.description}</p>
+                      <p
+                        class="project-detail-text"
+                        dangerouslySetInnerHTML={{
+                          __html: section.description,
+                        }}
+                      ></p>
                     </div>
                   ))}
                 </div>
@@ -49,4 +56,4 @@ const DevRentWebPage = () => {
   )
 }
 
-export default DevRentWebPage
+export default TMTP

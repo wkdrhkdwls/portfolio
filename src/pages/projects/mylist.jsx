@@ -4,10 +4,10 @@ import CustomScript from "../../styles/custom"
 import Layout from "../../components/Layout/layout"
 import ArrowUp from "../../utils/arrow"
 import { StaticImage } from "gatsby-plugin-image"
-import FestivalDetail from "../../hooks/pages/projects/festival/hook"
+import CrushDetail from "../../hooks/pages/projects/crush/hook"
 
-const FestivalPage = () => {
-  const { titleData } = FestivalDetail()
+const TMTP = () => {
+  const { titleData } = CrushDetail()
 
   return (
     <>
@@ -16,15 +16,17 @@ const FestivalPage = () => {
           <article class="container">
             <section class="project-detail" id="home">
               <div>
-                <figure class="festival-banner">
-                  <StaticImage
-                    src="../../../contents/images/festival/festival.png"
-                    alt="festival"
-                  />
+                <figure class="project-detail-banner">
+                  <div class="myList-img">
+                    <StaticImage
+                      src="../../../contents/images/crush/Crush.png"
+                      alt="Crush"
+                    />
+                  </div>
                 </figure>
               </div>
               <div class="project-detail-content">
-                <h2 class="h2 festival-title">{titleData.title}</h2>
+                <h2 class="h2 project-detail-title">{titleData.title}</h2>
               </div>
               <div>
                 <div>
@@ -33,7 +35,12 @@ const FestivalPage = () => {
                       <h2 class="project-detail-subtitle">
                         {section.subtitle}
                       </h2>
-                      <p class="project-detail-text">{section.description}</p>
+                      <p
+                        class="project-detail-text"
+                        dangerouslySetInnerHTML={{
+                          __html: section.description,
+                        }}
+                      ></p>
                     </div>
                   ))}
                 </div>
@@ -49,4 +56,4 @@ const FestivalPage = () => {
   )
 }
 
-export default FestivalPage
+export default TMTP
