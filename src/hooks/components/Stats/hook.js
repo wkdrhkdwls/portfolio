@@ -59,7 +59,7 @@ function useStatsDetail() {
   }, [users, accessToken])
 
   const [totalCommitCount, setTotalCommitCount] = useState(0)
-  console.log(totalCommitCount)
+
   const data = [
     {
       title: `+12`,

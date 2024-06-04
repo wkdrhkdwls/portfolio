@@ -39,6 +39,24 @@ const About = () => {
         <div className="section-text">
           <Carousel {...settings}>
             <div>
+              <div className="done-project">
+                <h2>{data.project.title}</h2>
+                {Object.entries(data.project.about).map(
+                  ([timePeriod, tasks], index) => (
+                    <div key={index}>
+                      <h3>{timePeriod}</h3>
+                      <ul>
+                        {tasks.map((task, taskIndex) => (
+                          <li key={taskIndex}>{task}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+
+            <div>
               <div className="career">
                 <h2>{data.career.title}</h2>
                 {Object.entries(data.career.about).map(

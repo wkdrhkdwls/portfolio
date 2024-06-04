@@ -274,6 +274,22 @@ body.active {
   font-weight: bold;
 }
 
+.done-project {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.done-project h3 {
+  font-size: 16px;
+  color: var(--raw-seinna);
+}
+
+.done-project li {
+  list-style: inside;
+  font-size: 11.5px;
+}
+
 .career {
   display: flex;
   flex-direction: column;
