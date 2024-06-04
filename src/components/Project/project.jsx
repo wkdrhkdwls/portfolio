@@ -134,6 +134,25 @@ const Projects = () => {
             </div>
           </Link>
         </li>
+        <li>
+          <Link href="/projects/duett" class="project-card">
+            <figure class="card-banner">
+              <StaticImage
+                src="../../../contents/images/duett/duett.png"
+                class="metLifeBanner"
+                alt="Blue digital watch on a dark liver background."
+              />
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">Duett</h3>
+
+              <time class="publish-date" datetime="2024-03">
+                2024.06
+              </time>
+            </div>
+          </Link>
+        </li>
       </ul>
     </section>
   )

@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "jangkwangjin's portfolio site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jangkwangjin",
   "dependencies": {
     "axios": "^1.4.0",
     "babel-plugin-styled-components": "^2.1.4",

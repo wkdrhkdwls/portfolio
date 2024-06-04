@@ -1574,3 +1574,52 @@ textarea.input-field {
 .metlife-img {
   width: 70%;
 }
+
+.container-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.imageWrapper-404 {
+  max-width: 600px;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.textWrapper-404 {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #666;
+  }
+}
+
+.backHomeButton-404 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007acc;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #005fa3;
+  }
+}
