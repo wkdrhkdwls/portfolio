@@ -7,18 +7,52 @@ function MyListDetail() {
     sections: [
       {
         subtitle: "1. 수행 동기 및 배경",
-        description:
-          "MyList는 Link-in-bio 서비스를 제공하며 각자의 음악 플레이리스트를 담고, 앨범 커버를 꾸밀 수 있습니다. 개인의 창작성에 따라 무궁무진하게 발전할 수 있는 웹 페이지를 구현중입니다. ",
+        description: (
+          <p>
+            MyList는 음악과 이미지를 포함한 플레이리스트를 만들어 하나의 링크로
+            다른 사람들과 취향을 공유할 수 있는 서비스입니다. 자신을 어필하는
+            것이 중요한 세대에서 음악은 최고의 수단 중 하나입니다. 음악은
+            대부분의 사람들에게 공통된 관심사이기 때문입니다. 또한, 연인
+            사이에서도 음악 취향은 매우 중요합니다. 이러한 이유로, 저희는
+            이미지와 음악을 커스터마이징할 수 있는 플레이리스트를 최대 4개까지
+            생성하고, 이를 하나의 링크로 공유할 수 있는 LinkedInBio 서비스를
+            개발했습니다.
+          </p>
+        ),
       },
       {
-        subtitle: "2. 기대효과 및 활용계획",
-        description:
-          "Linktree와 마찬가지로 자신만의 링크 페이지를 가질 수 있고, 개인의 선호에 따라 앨범 커버 또는 음악 등을 꾸밀 수 있습니다. 요즘과 같이 SNS처럼 자신을 나타내기 좋아하고, 나타낼 수 있는 플랫폼이 인기인만큼 MyList는 개인의 음악적 취향과 커버 꾸밈에 따라 개성을 나타낼 수 있습니다.",
+        subtitle: "2. 프로젝트 기여 내용",
+        description: (
+          <p>
+            - 레퍼런스나 레거시 코드 없이 초기 세팅부터 현재까지 전반적인
+            프론트엔드 개발을 리드
+            <br />
+            - 플레이리스트 내 음악 추가 및 이미지 커스터마이징 기능 개발
+            <br />
+            - 댓글, 좋아요 등 플레이리스트 디테일 및 음악 추가 기능 개발
+            <br />
+            - 첫 사용 유저를 위한 튜토리얼 기능 개발
+            <br />
+            - React, TypeScript, TailwindCSS 기반의 프로젝트
+            <br />- Redux, Recoil을 사용하여 음악 정보 및 토글 상태값을 전역으로
+            관리
+          </p>
+        ),
       },
+
       {
         subtitle: "3. 기술 스택",
-        description:
-          "프론트엔드로 React, Typescript, TailwindCSS 등의 프레임워크를 사용하고, 백엔드는 NodeJS를 사용하여 개발하고 있습니다.",
+        description: (
+          <ol>
+            <li> - React, React-Router</li>
+            <li>- Redux Toolkit, Recoil</li>
+            <li> - TypeScript, Craco, Babel</li>
+            <li>- TailwindCSS, daisyUI </li>
+            <li>- Axios</li>
+            <li>- react-cropper, browser-image-compression </li>
+            <li>- i18next ,react-oauth/google</li>
+          </ol>
+        ),
       },
 
       {
@@ -28,11 +62,6 @@ function MyListDetail() {
             배포
           </a>
         ),
-      },
-      {
-        subtitle: "5. 인사이트",
-        description:
-          "음악과 앨범커버의 저작권에 관련하여 매우 귀찮으면서 어려웠습니다. 변호사, 주변 교수님들과 같은 분들에게 자문을 받은 결과 단순 앨범커버를 가져다 쓸 시 상업적 목적일 시 법적 문제가 생길 수 있다고 하여, 저희는 상업적으로 자유로운 Unsplash이미지를 사용하여 앨범커버를 꾸미고 그에 맞는 플레이리스트를 유저가 작성하는 방식으로 진행하기로 하였습니다.",
       },
     ],
   }
