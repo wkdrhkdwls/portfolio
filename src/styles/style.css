@@ -1272,8 +1272,19 @@ textarea.input-field {
     height: 100%;
     margin-bottom: 0;
   }
+
+  .about-banner {
+    max-width: unset;
+    height: 100%;
+    margin-bottom: 0;
+  }
   @media (max-width: 768px) {
     .hero-banner {
+      max-width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
+      width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
+    }
+
+    .about-banner {
       max-width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
       width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
     }
@@ -1386,7 +1397,9 @@ textarea.input-field {
   }
 
   .about-banner {
-    margin-bottom: 0;
+    max-width: 500px;
+    width: 125%;
+    margin-bottom: 30px;
   }
 
   /**
@@ -1460,7 +1473,7 @@ textarea.input-field {
 }
 
 /**
- * responsive for larger than 1200px screen
+ * responsive for largern 1200px screen
  */
 
 @media (min-width: 1200px) {
@@ -1501,6 +1514,10 @@ textarea.input-field {
   .hero-banner {
     max-width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
     width: 100%; /* 이미지 너비를 화면에 맞게 조정 */
+  }
+
+  .about-banner {
+    display: none;
   }
 }
 
