@@ -110,7 +110,7 @@ const Projects = () => {
           </Link>
         </li>
         <li>
-          <Link href="/projects/duett" className="project-card">
+          <div href="/projects/duett" className="project-card">
             <figure className="card-banner">
               <StaticImage
                 src="../../../contents/images/duett/duett.png"
@@ -122,10 +122,10 @@ const Projects = () => {
             <div className="card-content">
               <h3 className="h4 card-title">Duett</h3>
               <time className="publish-date" dateTime="2024-06">
-                2024.06
+                2024.07(개발중)
               </time>
             </div>
-          </Link>
+          </div>
         </li>
       </ul>
     </section>

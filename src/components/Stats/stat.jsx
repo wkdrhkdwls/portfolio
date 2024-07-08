@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import "../../styles/style.css"
 import { FaAngleRight } from "react-icons/fa"
 import useStatsDetail from "../../hooks/components/Stats/hook"
 
 const Stats = () => {
-  const { data } = useStatsDetail()
-
+  const { data, loading } = useStatsDetail()
+  if (loading) {
+    return (
+      <section className="stats" id="stats">
+        <div className="spinner">Loading...</div>
+      </section>
+    )
+  }
   return (
     <section class="stats" id="stats">
       <ul class="stats-list">

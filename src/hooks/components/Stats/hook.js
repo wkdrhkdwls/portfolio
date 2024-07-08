@@ -5,12 +5,15 @@ import React, { useEffect, useState } from "react"
 
 function useStatsDetail() {
   const [items, setItems] = useState([])
-  const [users] = useState("wkdrhkdwls")
-
+  const [totalCommitCount, setTotalCommitCount] = useState(0)
+  const [organizationCount, setOrganizationCount] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const users = "wkdrhkdwls"
   const accessToken = process.env.GATSBY_ACCESS_TOKEN
 
   useEffect(() => {
-    const fetchRepos = async () => {
+    const fetchStats = async () => {
+      setLoading(true)
       try {
         const res = await fetch(`https://api.github.com/users/${users}/repos`, {
           headers: {
@@ -25,24 +28,31 @@ function useStatsDetail() {
 
           let totalCount = 0
           for (const repo of repos) {
-            const commitsRes = await fetch(
-              repo.commits_url.replace("{/sha}", ""),
-              {
-                headers: {
-                  Authorization: `Bearer ${accessToken}`, // 여기에 헤더 추가
-                },
+            try {
+              const commitsRes = await fetch(
+                repo.commits_url.replace("{/sha}", ""),
+                {
+                  headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                  },
+                }
+              )
+
+              console.log("커밋" + commitsRes)
+              if (commitsRes.ok) {
+                const commits = await commitsRes.json()
+                if (Array.isArray(commits)) {
+                  totalCount += commits.length
+                }
+              } else {
+                console.error(
+                  `Failed to fetch commits for repo: ${repo.name}. Status: ${commitsRes.status}`
+                )
               }
-            )
-            if (commitsRes.ok) {
-              // 응답이 성공적인지 확인
-              const commits = await commitsRes.json()
-              if (Array.isArray(commits)) {
-                // commits가 배열인지 확인
-                totalCount += commits.length
-              }
-            } else {
+            } catch (commitsError) {
               console.error(
-                `Failed to fetch commits for repo: ${repo.name}. Status: ${commitsRes.status}`
+                `An error occurred while fetching commits for repo: ${repo.name}`,
+                commitsError
               )
             }
           }
@@ -50,20 +60,43 @@ function useStatsDetail() {
         } else {
           console.error(`Failed to fetch repositories. Status: ${res.status}`)
         }
+
+        // Fetch organization data
+        const orgRes = await fetch(
+          `https://api.github.com/users/${users}/orgs`,
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        )
+
+        if (orgRes.ok) {
+          const orgs = await orgRes.json()
+          console.log("orgs", orgs) // 수정된 로그
+          setOrganizationCount(orgs.length)
+        } else {
+          console.error(
+            `Failed to fetch organizations. Status: ${orgRes.status}`
+          )
+        }
       } catch (error) {
-        console.error("An error occurred while fetching repositories:", error)
+        console.error(
+          "An error occurred while fetching repositories or organizations:",
+          error
+        )
+      } finally {
+        setLoading(false)
       }
     }
 
-    fetchRepos()
+    fetchStats()
   }, [users, accessToken])
-
-  const [totalCommitCount, setTotalCommitCount] = useState(0)
 
   const data = [
     {
-      title: `+12`,
-      description: "Organization",
+      title: `15`,
+      description: "Organizations",
       icon: <SlOrganization color="black" size={32} />,
     },
     {
@@ -78,7 +111,7 @@ function useStatsDetail() {
     },
   ]
 
-  return { data }
+  return { data, loading }
 }
 
 export default useStatsDetail
