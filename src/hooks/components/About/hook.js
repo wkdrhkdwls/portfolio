@@ -42,7 +42,7 @@ function useAboutDetail() {
           "Text, PDF를 입력받아 요약한 데이터를 렌더링하는 페이지 구현",
           "Redux를 사용하여 상태 전역 관리",
         ],
-        "Team.DINO 2023.08 ~ ": [
+        "약품 오남용을 방지하는 약품 상호 복용 가능 확인 서비스(TMTP)": [
           "여러 약품이 상호복용이 가능한지 확인하여 오남용 방지",
           "웹 캠과 AWS S3버킷을 사용하여 카메라로 찍은 사진을 AWS S3 버킷으로 보내는 기능 구현.",
           "FullPage 라이브러리를 사용하여 페이지 가독성 향상",
@@ -98,9 +98,15 @@ function useAboutDetail() {
       title: "자격증",
       about: {
         정보처리기사: "2023.11",
-        Opic: "IM2 2023.10",
+
         운전면허: "1종 보통",
         GTQ: "2급",
+      },
+    },
+    language: {
+      title: "어학 능력",
+      about: {
+        Opic: "IM2 2023.10",
       },
     },
     competition: {
@@ -121,6 +127,10 @@ function useAboutDetail() {
         "소단위 학위과정 공모전 - 우수상": {
           수상일시: "2023년 12월 21일",
           수상기관: "가톨릭대학교",
+        },
+        "MetLife Hackathon - 우수상": {
+          수상일시: "2024년 3월 24일",
+          수상기관: "MetLife",
         },
       },
     },

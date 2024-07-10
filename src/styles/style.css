@@ -362,6 +362,16 @@ body.active {
 .certificate li {
   list-style: inside;
 }
+
+.language {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.language li {
+  list-style: inside;
+}
+
 .competition {
   display: flex;
   flex-direction: column;

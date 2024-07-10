@@ -134,6 +134,18 @@ const About = () => {
                   )}
                 </ul>
               </div>
+              <div className="language">
+                <h2>{data.language.title}</h2>
+                <ul>
+                  {Object.entries(data.language.about).map(
+                    ([title, date], index) => (
+                      <div key={index}>
+                        {index + 1}. {title} {date}
+                      </div>
+                    )
+                  )}
+                </ul>
+              </div>
               <div className="other">
                 <h2>{data.other.title}</h2>
                 <ul>
